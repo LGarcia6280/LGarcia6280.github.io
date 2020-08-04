@@ -1,0 +1,249 @@
+/* This is the css formatting file for the coaching details modal created using the code found in views/coachingDetails.php */
+
+/* Created by Luis Garcia 20200321 */
+
+/* Formatting the modal header */
+div.topOfModal
+{
+  /*position:sticky;
+  position:-webkit-sticky;*/
+  position:fixed;
+  z-index: 50;
+  width: 998px;
+  height:180px;
+}
+
+div.coaching-history-top
+{
+
+  background-color: lightgrey;
+  border-top: 5px solid lightgrey;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* The details_header refers to the text title sequence inside the details_top div */
+h3.history-header
+{
+  text-align: right;
+}
+
+div.row
+{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* The Warning-container houses the graphic at the top of the page */
+div.Warning-container
+{
+  position: relative;
+  left: 1vw;
+  top: 0.5vw;
+  float: left;
+  width: 250px;
+  margin: 0px;
+
+}
+
+/* This is the actual warning sign graphic */
+img.Warning-sign
+{
+  padding-right:0;
+}
+
+/* This panel contains the Student Name, User Name and CRN information */
+div.studentInfoPanel
+{
+  background-color: inherit;
+  border:0px solid #ddd;
+  box-shadow: none;
+  margin-bottom: 5px;
+  font-size:1.3em;
+}
+
+/* Basic formatting of the modal window */
+#student-progress-modal
+{
+  width:1000px;
+  height: 400px;
+  transition: 1s;
+}
+
+/* Basic formatting of the navigation bar */
+#pageNavigationContainer
+{
+  position: fixed;
+  left:0px;
+  transition: 1s;
+  margin-top: 0px;
+  background-color: white;
+}
+
+.row-page-nav
+{
+  margin-top:10px;
+  margin-bottom: 5px;
+  box-shadow: none;
+}
+
+div.panel-nav
+{
+  margin-bottom:0px;
+  box-shadow: none;
+}
+
+/* Basic formatting of the container that has all the history data */
+#historyData
+{
+  display: none;
+  /*transition: 3s;*/
+  z-index: 1055;
+  background-color: white;
+}
+
+/* The formatting for the container with all the coaching session clusters */
+div.content
+{
+  position: fixed;
+  top: 236px;
+  width: 990px;
+  height: 495px;
+  overflow-y:auto;
+  margin-top:10px;
+  margin-left:4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  */
+}
+
+/* Creates the slide effect for the history data container when the help button is activated */
+@keyframes histSlideForward
+{
+  0%
+  {
+    left: 5px;
+  }
+
+  100%
+  {
+    left: -300px;
+  }
+}
+
+/* Creates the slide effect for the history data container when the help button is deactivated */
+@keyframes histSlideBackwards
+{
+  0%
+  {
+    left:-300px;
+  }
+
+  100%
+  {
+    left: 0px;
+  }
+}
+
+/* Formattting the helpBox container */
+#helpBox
+{
+  transition: 3s;
+}
+
+.help-panel
+{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+div.helps
+{
+  position: fixed;
+  display: none;
+  z-index:1052;
+  top: 236px;
+  left: 380px;
+  width: 300px;
+  height: 495px;
+  overflow-y:hidden;
+  margin-top:10px;
+  margin-left:2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Creates the slide in effect for the help box when the help button is activated */
+@keyframes toggle
+{
+  0%
+  {
+    left:380px;
+  }
+
+  100%
+  {
+    left: 680px;
+  }
+}
+
+/*The formatting for the Toggle for details button */
+button.coll-btn
+{
+  background-color:#9d5a90;
+  color: white;
+}
+
+/* Formatting some of the Nav bar buttons not needed when the modal is first opened */
+button.notAtStart
+{
+  display: none;
+  transition: 0.5s;
+}
+
+/* Formatting the cluster buttons */
+.clusters
+{
+  opacity: 1.0;
+  color: white;
+  border:1px solid #ddd;
+}
+
+/* Adding distinctive formatting for when the user hovers over the cluster buttons */
+.clusters:hover
+{
+  color: black;
+  border-color: black;
+}
+
+/*The formatting for the close button at the bottom of the page */
+div.bott-close
+{
+  position: fixed;
+  top:355px;
+  bottom:0;
+  width:1000px;
+  height:40px;
+  transition: 1s;
+}
+
+.close-button
+{
+  box-shadow: none;
+}
+
+/* Modifying the hover effect over the close button */
+.btn-danger.active:hover
+{
+  color:black;
+  border:1px solid black;
+}
+
+.row-page-close
+{
+  margin:1px 0px 0px;
+}
+
+div.bott-close-panel
+{
+  margin-bottom:5px;
+}
