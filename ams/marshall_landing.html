@@ -69,6 +69,8 @@
       selectionRightSide.forEach(rigthElement => {
         rigthElement.addEventListener("mouseover", function(){
           rigthElement.style.transform = "scale(1.75) translate(-10rem)";
+          leftElement.style.zIndex = 1000;
+          leftElement.style.position = "relative";
           rigthElement.style.transition = "transform 0.25 ease";
 
         });
@@ -76,6 +78,7 @@
         rigthElement.addEventListener("mouseout", function(){
 
           rigthElement.style.transform = "scale(1.0)";
+          leftElement.style.zIndex = 1;
           rigthElement.style.transition = "transform 0.25 ease";
 
         });
@@ -85,7 +88,7 @@
       selectionLeftSide.forEach(leftElement => {
         leftElement.addEventListener("mouseover", function(){
           leftElement.style.transform = "scale(1.75) translate(10rem)";
-          leftElement.style.zIndex = 10;
+          leftElement.style.zIndex = 1000;
           leftElement.style.position = "relative";
           leftElement.style.transition = "transform 0.25 ease";
 
