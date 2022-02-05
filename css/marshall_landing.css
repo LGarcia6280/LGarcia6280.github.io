@@ -1,0 +1,172 @@
+/*
+=====================================================================
+*   Marhsall_Landing Stylesheet
+*
+*   02-05-2022
+=====================================================================
+
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. Container Styles
+   d. Left Side Image Divs
+   e. Right Side Image Divs
+   f. Other img Elements
+   g. Admin Panel Image Element
+   h. Login Section Text
+   i. Edit Profile Section Text
+   j. Primary Info Section Text
+   k. Admin Panel Section Text
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+body
+{
+  background-color: #2B2B2B;
+  font-family: 'Bangla MN';
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+#header
+{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #cfb072;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Container Styles
+/* ------------------------------------------------------------------ */
+
+#container
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Left Side Image Divs
+/* ------------------------------------------------------------------ */
+
+.left_side_img_div
+{
+  width: 47%;
+  margin: 1rem;
+  object-fit: fill;
+  display:inline-block;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Right Side Image Divs
+/* ------------------------------------------------------------------ */
+
+.right_side_img_div
+{
+  width: 47%;
+  object-fit: fill;
+  display:inline-block;
+  float:right;
+  margin: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Other img Element
+/* ------------------------------------------------------------------ */
+
+.otherImg
+{
+  width: 98%;
+  object-fit: fill;
+  margin: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Admin Panel img Element
+/* ------------------------------------------------------------------ */
+
+.adminPanelImg
+{
+  width: 98%;
+  object-fit: fill;
+  margin: 1rem;
+  background-color: black;
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Login Section Text
+/* ------------------------------------------------------------------ */
+
+#login_page_text
+{
+  width: 47%;
+  object-fit: fill;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  top: -4rem;
+  margin: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Edit Profile Section Text
+/* ------------------------------------------------------------------ */
+
+#edit_profile_page_text
+{
+  width: 47%;
+  object-fit: fill;
+  display:inline-block;
+  position: relative;
+  top: 12rem;
+  color: #fff;
+  margin: 1rem;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------ */
+/* j. Primary Info Section Text
+/* ------------------------------------------------------------------ */
+
+#primary_info_page_text
+{
+  width: 47%;
+  object-fit: fill;
+  display:inline-block;
+  position: relative;
+  top: 5rem;
+  color: #fff;
+  margin: 1rem;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------ */
+/* k. Admin Panel Section Text
+/* ------------------------------------------------------------------ */
+
+#admin_panel_text
+{
+  width: 47%;
+  object-fit: fill;
+  display: inline-block;
+  color: #fff;
+  position:
+  relative; top: -4rem;
+  margin: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* l. Footer
+/* ------------------------------------------------------------------ */
+
+#footer
+{
+  margin-bottom:2rem;
+}
