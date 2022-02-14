@@ -287,6 +287,12 @@ ul#nav li.current a { color: #F06000; }
    list-style-position: inside;
 }
 
+#resume .pluralsight > h5
+{
+   color: #6E7881;
+   font-style: italic;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
