@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MarhsallConnect Images | Luis's Webpage</title>
+    <link rel="stylesheet" href="../css/marshall_landing.css">
+    <link rel="stylesheet" href="../css/marshall_grid.css">
+    
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1>MarshallConnect Images</h1>
+    </header>
+
+    <nav>
+      <a href="../index.html">Back to Main Page</a>
+    </nav>
+
+    <main>
+      <div class="pages login">
+        <h3>Login Page</h3>
+        <img class="site_image_odd" src="../images/portfolio/marshall_login.png">
+        <p>Highlights the Association's purpose of bringing U.S. and U.K. culture together while providing the standard security measures.</p>
+      </div>
+      
+      <div class="pages directory">
+        <h3>Directory Page</h3>
+        <img class="site_image_even" src="../images/portfolio/marshallConnect/marshall_directory_page.png">
+        <p>Display of scholar information. Initially, 5 lines are displayed with primary information. Clicking on icons and text reveals additional information. Clean design as to not overwhelm.</p>
+      </div>
+     
+      <div class="pages edit">
+        <h3>Edit Profile Page</h3>
+        <img class="site_image_odd" src="../images/portfolio/marshallConnect/marshall_edit_profile.png">
+        <p>Allows users to edit information in their profile. Tabs hide additional data entry forms. The clean design keeps the user from being overwhelm.</p>
+      </div>
+     
+      <div class="pages edit-primary">
+        <h3>Primary Profile Information Section</h3>
+        <img class="site_image_even" src="../images/portfolio/marshallConnect/marshall_primary_info.png">
+        <p>Allows users to edit what's considered primary information in their profile. Notice the expanded institution information box. The collapsible box hides information in plain sight. A similar approach is taken in for the degree information boxes. The goal was to display only the basic information. The user can then choose to display any other information.</p>
+      </div>
+     
+      <div class="pages admin">
+        <h3>Admin Control Panel Page</h3>
+        <img class="site_image_odd" src="../images/portfolio/marshallConnect/marshall_admin.png">
+        <p>Simple interface to perform CRUD activities on profiles (names blacked out for privacy).</p>
+      </div>
+
+    </main>
+
+      <footer>
+        <p>&copy; 2020 &bull; Used with permission - Association of Marshall Scholars - all rights reserved.</p>
+  
+      </footer>
+  
+    </body>
+
+    
+    
+
+
+    <script>
+
+      //Code to increase image size
+      var selectionRightSide = document.querySelectorAll(".site_image_even");
+      var selectionLeftSide = document.querySelectorAll(".site_image_odd");
+
+      selectionRightSide.forEach(rightElement => {
+        rightElement.addEventListener("click", function(){
+          rightElement.style.transform = "scale(1.75) translate(-10rem)";
+          rightElement.style.zIndex = 1000;
+          rightElement.style.position = "relative";
+          rightElement.style.transition = "transform 0.25 ease";
+
+        });
+
+        rightElement.addEventListener("mouseleave", function(){
+
+          rightElement.style.transform = "scale(1.0)";
+          rightElement.style.zIndex = 1;
+          rightElement.style.transition = "transform 0.25 ease";
+
+        });
+
+      });
+
+      selectionLeftSide.forEach(leftElement => {
+        leftElement.addEventListener("click", function(){
+          leftElement.style.transform = "scale(1.75) translate(10rem)";
+          leftElement.style.zIndex = 1000;
+          leftElement.style.position = "relative";
+          leftElement.style.transition = "transform 0.25 ease";
+
+        });
+
+        leftElement.addEventListener("mouseleave", function(){
+
+          leftElement.style.transform = "scale(1.0)";
+          leftElement.style.zIndex = 1;
+          //leftElement.style.position = "static";
+          leftElement.style.transition = "transform 0.25 ease";
+
+        });
+      });
+
+    </script>
+
+  </body>
+
+</html>

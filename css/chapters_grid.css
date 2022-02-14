@@ -1,0 +1,51 @@
+body
+{
+    display: grid;
+    grid: auto-flow min-content / 1fr;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+    grid-gap: 1em;
+}
+
+header{
+    grid-area: header;
+}
+
+nav
+{
+    grid-area: nav;
+}
+
+main
+{
+    grid-area: main;
+}
+
+main
+{
+    display: grid;
+    grid: auto-flow max-content / repeat(12, 1fr);
+    grid-gap: 1em;
+}
+
+main > div
+{
+    grid-column: span 12;
+    padding: 0.5em;
+}
+
+@media screen and (min-width: 850px)
+{
+    main > div
+    {
+        grid-column: span 6;
+    }
+}
+
+footer
+{
+    grid-area: footer;
+}
+

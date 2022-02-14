@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Chapters Images | Luis's Webpage</title>
+    <link rel="stylesheet" href="../css/chapters_landing.css">
+    <link rel="stylesheet" href="../css/chapters_grid.css">
+
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1>Chapters Images</h1>
+    </header>
+
+    <nav>
+      <a href="../index.html">Back to Main Page</a>
+    </nav>
+
+    <main>
+      
+      <div class="pages acp_crud">
+        <h3>Admin Control Panel Page - CRUD Section</h3>
+        <img class="site_image_odd" src="../images/portfolio/chapters/acp_crud.png">
+        <p>Allows Administrators to perform Create, Review, Update, and Delete operations on a number of different aspects of the data.</p>
+      </div>
+
+      <div class="pages course_delete">
+        <h3>Course Delete Page</h3>
+        <img class="site_image_even" src="../images/portfolio/chapters/course_delete.png">
+        <p>Page displayed when an Administrator is performing a course delete operation.</p>
+      </div>
+     
+      <div class="pages question_view">
+        <h3>Question View Page</h3>
+        <img class="site_image_odd" src="../images/portfolio/chapters/question_view.png">
+        <p>Page displayed when an Administrator is performing a question review operation.</p>
+      </div>
+      
+      <div class="pages user_create">
+        <h3>User Create Page</h3>
+        <img class="site_image_even" src="../images/portfolio/chapters/user_create.png">
+        <p>Page displayed when an Administrator is performing a user create operation.</p>
+      </div>
+
+      <div class="pages acp_insight">
+        <h3>Admin Control Panel Page - Insights Section</h3>
+        <img class="site_image_odd" src="../images/portfolio/chapters/acp_insight.png">
+        <p>Allows Administrators to create different reports that provide insight on student and course performance.</p>
+      </div>
+     
+      <div class="pages hints_used">
+        <h3>Hints Used Page</h3>
+        <img class="site_image_even" src="../images/portfolio/chapters/hints_used.png">
+        <p>Sample of a report generated via the Admin Control Panel's Insight Center. This particular report contains a lot of important data that didn't show well in tabular form. Hence, the data is intially displayed in the form shown in this image. However, pressing teh View in Tabular Form button gives the option to display it in such a manner on screen. Moreover, an option to download the data in CSV format is also available. The data can also be sorted based on different paramters.</p>
+      </div>
+     
+      <div class="pages fcp">
+        <h3>Faculty Control Panel</h3>
+        <img class="site_image_odd" class="site_image" src="../images/portfolio/chapters/fcp.png">
+        <p>Allows faculty to review course performance with different levels of granularity.</p>
+      </div>
+     
+      <div class="pages coaching_ctr">
+        <h3>Coaching Center Page</h3>
+        <img class="site_image_even" src="../images/portfolio/chapters/coachingcenter.png">
+        <p>This page is accessed via the Faculty Control Panel. It provides a summary of all coaching activity for a specific class.</p>
+      </div>
+
+      <div class="pages completed_session">
+        <h3>Coaching Dialogue Page</h3>
+        <img class="site_image_even" src="../images/portfolio/chapters/completed_session.png">
+        <p>This page is a summary of a specific student's coaching session completion,</p>
+      </div>
+
+      <div class="pages coaching">
+        <h3>Coaching Dialogue Page</h3>
+        <img class="site_image_odd" src="../images/portfolio/chapters/coaching.png">
+        <p>This page shows up whenever a student triggers a coaching session. It's set up to look like a dialogue between the "Coach" and the student.</p>
+      </div>
+
+    </main>
+
+      <footer>
+        <p>&copy; 2020 &bull; Used with permission - Luis Garcia / Pikes Peak Community College - all rights reserved.</p>
+  
+      </footer>
+  
+    </body>
+
+    
+    
+
+
+    <script>
+
+      //Code to increase image size
+      var selectionRightSide = document.querySelectorAll(".site_image_even");
+      var selectionLeftSide = document.querySelectorAll(".site_image_odd");
+
+      selectionRightSide.forEach(rightElement => {
+        rightElement.addEventListener("click", function(){
+          rightElement.style.transform = "scale(1.75) translate(-10rem)";
+          rightElement.style.zIndex = 1000;
+          rightElement.style.position = "relative";
+          rightElement.style.transition = "transform 0.25 ease";
+
+        });
+
+        rightElement.addEventListener("mouseleave", function(){
+
+          rightElement.style.transform = "scale(1.0)";
+          rightElement.style.zIndex = 1;
+          rightElement.style.transition = "transform 0.25 ease";
+
+        });
+
+      });
+
+      selectionLeftSide.forEach(leftElement => {
+        leftElement.addEventListener("click", function(){
+          leftElement.style.transform = "scale(1.75) translate(10rem)";
+          leftElement.style.zIndex = 1000;
+          leftElement.style.position = "relative";
+          leftElement.style.transition = "transform 0.25 ease";
+
+        });
+
+        leftElement.addEventListener("mouseleave", function(){
+
+          leftElement.style.transform = "scale(1.0)";
+          leftElement.style.zIndex = 1;
+          //leftElement.style.position = "static";
+          leftElement.style.transition = "transform 0.25 ease";
+
+        });
+      });
+
+    </script>
+
+  </body>
+
+</html>
